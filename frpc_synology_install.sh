@@ -68,31 +68,31 @@ mv ${FILE_NAME}/${FRP_NAME} ${FRP_PATH}
 # configure frpc.toml
 RADOM_NAME=$(cat /dev/urandom | head -n 10 | md5sum | head -c 8)
 cat >${FRP_PATH}/${FRP_NAME}.toml <<EOF
-serverAddr = "frp.freefrp.net"
+serverAddr = "47.122.130.157"
 serverPort = 7000
 auth.method = "token"
-auth.token = "freefrp.net"
+auth.token = "212060gj"
 
 [[proxies]]
-name = "web1_${RADOM_NAME}"
+name = "i3_nas"
 type = "http"
-localIP = "192.168.1.2"
+localIP = "10.20.60.194"  
 localPort = 5000
-customDomains = ["nas.yourdomain.com"]
+subdomain = ["nas"]
 
 [[proxies]]
-name = "web2_${RADOM_NAME}"
-type = "https"
-localIP = "192.168.1.2"
-localPort = 5001
-customDomains = ["nas.yourdomain.com"]
-
-[[proxies]]
-name = "tcp1_${RADOM_NAME}"
+name = "i3_ssh"
 type = "tcp"
-localIP = "192.168.1.3"
-localPort = 22
-remotePort = 22222
+localIP = "10.20.60.194"
+localPort = 9878
+remotePort = 19878
+
+[[proxies]]
+name = "i3_饥荒面板"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8082
+remotePort = 18082
 
 EOF
 
