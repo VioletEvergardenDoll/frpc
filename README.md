@@ -34,9 +34,9 @@
 
 安装
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://raw.githubusercontent.com/VioletEvergardenDoll/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 # 以下为国内镜像
-wget https://ghp.ci/https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://ghp.ci/https://raw.githubusercontent.com/VioletEvergardenDoll/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 ```
 
 使用
@@ -49,9 +49,9 @@ sudo systemctl restart frpc
 
 卸载
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
+wget https://raw.githubusercontent.com/VioletEvergardenDoll/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 # 以下为国内镜像
-wget https://ghp.ci/https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
+wget https://ghp.ci/https://raw.githubusercontent.com/VioletEvergardenDoll/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 ```
 
 ### 4. Linux 服务器 docker 安装
